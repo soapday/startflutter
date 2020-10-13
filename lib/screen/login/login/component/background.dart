@@ -17,17 +17,7 @@ class Background extends StatelessWidget {
       width: double.infinity,
       height: size.height,
       child: Stack(
-        alignment: Alignment.center,
-        children: <Widget>[
-          Positioned(
-            child: Image.asset("assets/flame-searching.png"),
-          ),
-          Positioned(
-            top: 0,
-            child: Text("Fitur Masih Dalam Pengembangan"),
-          ),
-          child
-        ],
+
       ),);
   }
 }
