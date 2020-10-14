@@ -8,9 +8,7 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery
-        .of(context)
-        .size;
+    Size size = MediaQuery.of(context).size;
     return Background(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -22,7 +20,8 @@ class Body extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-            decoration: BoxDecoration(color: Colors.green[500],
+            decoration: BoxDecoration(
+                color: Colors.green[500],
                 borderRadius: BorderRadius.circular(30)),
           )
         ],
@@ -33,19 +32,21 @@ class Body extends StatelessWidget {
 
 class TextFieldContainer extends StatelessWidget {
   final Widget child;
+
   const TextFieldContainer({
-    Key key, this.child,
-  }) :super(key: key);
+    Key key,
+    this.child,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      width: size.width*0.8,
+      width: size.width * 0.8,
       decoration: BoxDecoration(
           color: Colors.green[700], borderRadius: BorderRadius.circular(30)),
       child: child,
-    ),
+    );
   }
 }
